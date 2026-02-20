@@ -1,0 +1,303 @@
+ * {
+   margin: 0px;
+   padding: 0px;
+ }
+
+ header {
+   min-height: 120px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: black;
+   flex-wrap: wrap;
+ }
+
+
+ #logo {
+   height: 80px;
+   max-width: 100%;
+   width: auto;
+ }
+
+ .links {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   font-family: "Inter", sans-serif;
+   font-weight: bold;
+   align-items: center;
+ }
+
+ .links a {
+   color: white;
+   text-decoration: none;
+
+ }
+
+ #num {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #f64c4c;
+   height: 35px;
+   width: 150px;
+   text-align: center;
+   border-radius: 25px;
+   font-size: bold;
+ }
+
+ @media (max-width: 768px) {
+
+   header {
+     flex-direction: column;
+     align-items: start;
+
+   }
+
+   .links {
+     display: none;
+
+   }
+
+   #num {
+     width: 180px;
+   }
+
+ }
+
+ .carousel-box {
+   min-height: 550px;
+   padding: 40px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   text-align: center;
+ }
+
+ .carousel {
+   border: 2px solid black;
+   width: 100%;
+   /* responsive */
+   max-width: 1000px;
+   /* limit on large screens */
+   height: 300px;
+ }
+
+ #carousel-text {
+   font-size: 50px;
+   max-width: 90%;
+ }
+
+ .line {
+   border-bottom: 2px solid rgb(205, 193, 193);
+   width: 100%;
+   max-width: 1000px;
+   margin: 0 auto;
+   /* center properly */
+ }
+
+ @media (max-width: 768px) {
+
+   .carousel {
+     height: 200px;
+   }
+
+   #carousel-text {
+     font-size: 28px;
+   }
+
+ }
+
+ /* Next */
+ #sec1 {
+   font-family: "Inter", sans-serif;
+   color: rgb(88, 88, 88);
+   font-size: 40px;
+   text-align: center;
+   max-width: 800px;
+   width: 90%;
+   margin: 80px auto 40px auto;
+   font-weight: bold;
+ }
+
+ .sec1-form {
+   width: 90%;
+   max-width: 1200px;
+   margin: 0 auto 50px auto;
+   display: flex;
+   gap: 40px;
+ }
+
+ #enq-btn {
+   width: 100%;
+   max-width: 250px;
+   height: 50px;
+   background-color: #f64c4c;
+   color: white;
+   border: none;
+   letter-spacing: 2px;
+   margin-top: 15px;
+ }
+
+ #enq-btn:hover {
+   background-color: #ff9797;
+   cursor: pointer;
+ }
+
+ .sec1-items {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   text-align: left;
+ }
+
+ .sec1-items>p {
+   font-size: 18px;
+   line-height: 28px;
+ }
+
+ .sec1-items2 p {
+   font-size: 20px;
+ }
+
+ .sec1-items2 {
+   font-family: "Inter", sans-serif;
+   color: rgb(58, 58, 58);
+   display: flex;
+   row-gap: 10px;
+   flex-direction: column;
+   text-align: left;
+ }
+
+
+ .sec1-items2 p {
+   font-weight: bold;
+   font-size: 20px;
+   margin-bottom: 30px;
+ }
+
+ .sec1-items2 input,
+ .sec1-items2 textarea {
+   width: 100%;
+   padding: 10px;
+ }
+
+
+
+ ul {
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 20px;
+ }
+
+ @media (max-width: 768px) {
+   .sec1-items2 {
+     width: 70%;
+   }
+
+   #sec1 {
+     font-size: 28px;
+   }
+
+   .sec1-form {
+     flex-direction: column;
+   }
+
+   .sec1-items {
+     width: 100%;
+   }
+
+ }
+
+ footer {
+   background-color: #1f1f1f;
+   padding: 40px 20px;
+ }
+
+
+ .logos {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   flex-wrap: wrap;
+   padding: 20px 0;
+   background-color: #333;
+ }
+
+ .item {
+   border-radius: 50%;
+   padding: 10px;
+   background-color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .logos img {
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+ }
+
+
+ .footer-info>div:first-child {
+   color: white;
+   margin: 40px auto;
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   flex-wrap: wrap;
+   text-align: center;
+   font-size: 17px;
+   font-family: monospace;
+   letter-spacing: 2px;
+ }
+
+
+ #address {
+   color: #c2bcbc;
+   text-align: center;
+   max-width: 600px;
+   margin: 0 auto 30px;
+   line-height: 1.6;
+   padding: 0 15px;
+ }
+
+
+ #developer {
+   text-align: center;
+   font-size: 18px;
+   color: #918383;
+   margin-top: 20px;
+ }
+
+
+ @media (max-width: 768px) {
+
+   .footer-info>div:first-child {
+     flex-direction: column;
+     gap: 15px;
+     font-size: 17px;
+
+   }
+
+   .logos {
+     gap: 15px;
+   }
+
+
+   #address {
+
+     max-width: 250px;
+
+
+   }
+
+ }
