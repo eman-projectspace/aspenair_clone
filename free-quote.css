@@ -3,6 +3,11 @@
    padding: 0px;
  }
 
+ :root {
+   --main-font: 'Inter', sans-serif;
+ }
+
+
  header {
    position: relative;
    background-image: url("https://images.squarespace-cdn.com/content/v1/5909baf6893fc0051bb00c17/1495075351297-G1P1HVD9TUO1EXQVJA4Z/cat-1903024_1920.jpg?format=2500w");
@@ -42,14 +47,14 @@
    margin: 25px;
    display: flex;
    column-gap: 35px;
-   font-family: "Inter", sans-serif;
+   font-family: var(--main-font);
    font-weight: bold;
    align-items: center;
 
  }
 
  .links a {
-   font-size: 13px;
+   font-size: 17px;
    color: white;
    text-decoration: none;
    cursor: pointer;
@@ -58,7 +63,11 @@
  }
 
  .links a:hover {
-   color: #ff9090;
+   color: #f64c4c;
+ }
+
+ .links a.active {
+   color: #f64c4c;
  }
 
  #num {
@@ -71,6 +80,11 @@
    text-align: center;
    border-radius: 25px;
    font-size: bold;
+ }
+
+ #num:hover {
+   background-color: #df5f5f;
+   color: white;
  }
 
  @media (max-width:1296px) {
@@ -100,7 +114,7 @@
  .center-content h1 {
    font-size: 50px;
    margin-bottom: 20px;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-family: var(--main-font);
  }
 
  .center-content button {
@@ -339,7 +353,7 @@
    flex-wrap: wrap;
    text-align: center;
    font-size: 17px;
-   font-family: monospace;
+   font-family: var(--main-font);
    letter-spacing: 2px;
  }
 
