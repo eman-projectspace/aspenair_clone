@@ -10,30 +10,43 @@
 
 <body>
   <header>
+    <div class="parent-top">
+      <div class="top-bar">
+        <img id="logo"
+          src="//images.squarespace-cdn.com/content/v1/5909baf6893fc0051bb00c17/1495168718302-AWSDAYW4ZO63P4IQL7S1/Aspen+Logo.png?format=1500w"
+          alt="">
+        <div id="hamburger"><img src="/images//hamburger.png" alt="" height="20px" width="20px"></div>
 
-    <div class="top-bar">
-      <img id="logo"
-        src="//images.squarespace-cdn.com/content/v1/5909baf6893fc0051bb00c17/1495168718302-AWSDAYW4ZO63P4IQL7S1/Aspen+Logo.png?format=1500w"
-        alt="">
-      <div id="hamburger"><img src="/images//hamburger.png" alt="" height="20px" width="20px"></div>
+        <div class="Side-bar">
+          <div id="close"><img src="/images/close.png" alt="" height="20px" width="20px"></div>
+          <a href="/">HOME</a>
+          <a href="/about.html" class="active">ABOUT</a>
+          <a href="/heating.html">HEATING</a>
+          <a href="/cooling.html">COOLING</a>
+          <a href="myair.html">MYAIR</a>
+          <a href="/service-area.html">SERVICE AREA</a>
+          <a href="free-quote.html">FREEQUOTE</a>
+          <a href="#" id="num-sidebar">1300661861</a>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="/">HOME</a>
+        <a href="/about.html" class="active">ABOUT</a>
+        <a href="/heating.html">HEATING</a>
+        <a href="/cooling.html">COOLING</a>
+        <a href="myair.html">MYAIR</a>
+        <a href="/service-area.html">SERVICE AREA</a>
+        <a href="free-quote.html">FREEQUOTE</a>
+        <a href="#" id="num">1300661861</a>
+
+      </div>
     </div>
-
     <div class="center-content">
       <h1>WHAT WE DO</h1>
       <button>CONTACT US</button>
     </div>
 
-    <div class="links">
-      <a href="/">HOME</a>
-      <a href="/about.html" class="active">ABOUT</a>
-      <a href="/heating.html">HEATING</a>
-      <a href="/cooling.html">COOLING</a>
-      <a href="myair.html">MYAIR</a>
-      <a href="/service-area.html">SERVICE AREA</a>
-      <a href="free-quote.html">FREEQUOTE</a>
-      <a href="#" id="num">1300661861</a>
-
-    </div>
   </header>
 
 
@@ -154,6 +167,21 @@
     </div>
 
   </footer>
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector(".Side-bar");
+    const closeBtn = document.getElementById("close");
+
+    hamburger.addEventListener("click", function () {
+      navMenu.classList.add("active");
+      hamburger.classList.add("hide");
+    });
+
+    closeBtn.addEventListener("click", function () {
+      navMenu.classList.remove("active");
+      hamburger.classList.remove("hide");
+    });
+  </script>
 </body>
 
 </html>
