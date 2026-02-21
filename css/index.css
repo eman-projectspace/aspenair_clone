@@ -95,6 +95,10 @@
 
   }
 
+  .Side-bar {
+    display: none;
+  }
+
   @media (max-width:1296px) {
     .links {
       display: none;
@@ -117,6 +121,54 @@
     }
   }
 
+  @media (max-width:1296px) {
+
+    .Side-bar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 0px;
+      right: 0;
+      width: 25%;
+      height: 100%;
+      background-color: rgb(33, 32, 32);
+      padding: 20px;
+      font-size: 10px;
+    }
+
+    .Side-bar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 0;
+      font-family: system-ui;
+    }
+
+    .Side-bar.active {
+      display: flex;
+    }
+
+    #num-sidebar {
+      background-color: #f64c4c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      border-radius: 25px;
+      width: 70px;
+    }
+
+    #hamburger.hide {
+      display: none;
+    }
+
+    #close {
+      filter: invert(1);
+      padding: 5px;
+    }
+
+  }
+
+  /*  */
 
   section {
     padding: 60px 5%;
