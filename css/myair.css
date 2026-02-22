@@ -294,8 +294,20 @@ header {
 }
 
 @media (max-width: 768px) {
+  #sec1 {
+    font-size: 20px;
+  }
+
+  #sec1-txt {
+    font-size: 16px;
+  }
+
   .sec1-form {
     flex-direction: column;
+  }
+
+  .sec1-items2 input {
+    width: 90%;
   }
 
 
