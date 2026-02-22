@@ -321,6 +321,9 @@
  }
 
  @media (max-width: 600px) {
+   header {
+     height: 400px;
+   }
 
    .center-content {
      font-size: 28px;
@@ -331,6 +334,21 @@
      align-items: center;
    }
 
+   .center-content h1 {
+     font-size: 20px;
+     line-height: 22px;
+   }
+
+   .center-content h3 {
+     font-size: 20px;
+     line-height: 25px;
+
+
+   }
+
+   #checkbox input {
+     width: 20px;
+   }
  }
 
  /* Next */
@@ -444,7 +462,7 @@
    line-height: 1.6;
    color: #444;
    text-align: justify;
-   font-family: cursive;
+   font-family: system-ui;
  }
 
  @media (max-width:800px) {
