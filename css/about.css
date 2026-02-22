@@ -232,6 +232,10 @@
 
   }
 
+  .sec1-items2 textarea {
+    height: 100px;
+  }
+
   @media (max-width: 992px) {
 
     header {
@@ -239,6 +243,9 @@
       align-items: center;
       padding: 20px;
       text-align: center;
+      height: 400px;
+
+
     }
 
     .links {
@@ -356,8 +363,13 @@
   @media (max-width:460px) {
 
     .sec1-form {
-      width: 70%;
+      width: 88%;
     }
+
+    .sec1-form input {
+      width: 90%;
+    }
+
   }
 
   .sec1-items2 p {
@@ -373,9 +385,7 @@
 
   }
 
-  .sec1-items2 textarea {
-    height: 100px;
-  }
+
 
   #btn {
     background-color: #f64c4c;
