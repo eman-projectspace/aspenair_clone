@@ -188,7 +188,7 @@
       position: fixed;
       top: 0px;
       right: 0;
-      width: 25%;
+      width: 50%;
       height: 100%;
       background-color: rgb(33, 32, 32);
       padding: 20px;
@@ -202,6 +202,7 @@
       font-weight: bold;
       padding: 10px 0;
       font-family: system-ui;
+      margin-bottom: 10px;
     }
 
     .Side-bar.active {
